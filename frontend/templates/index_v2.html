@@ -1,19 +1,18 @@
 <!doctype html>
 <title>Blackjack</title>
 <h1>Welcome to Crappy BlackJack</h1>
-<h5>by Benjie</h5> 
+<h5>by Benjie</h5>
 {% if draw_house %}
-  <h3>House Draws: {{ draw_house }}</h3>
-  <h3>Player Draws: {{ draw_user }}</h3>
-
   {% if draw_win == 'house' %}
+    <h2>Player Draws: {{ draw_user }}</h2>
     <h2>House wins with {{ draw_win_card }}!!</h2>
   {% else %}
+     <h2>House Draws: {{ draw_house }}</h2>
      <h2>Player wins with {{draw_win_card}}!! </h2>
-  {% endif %} 
+  {% endif %}
 
 {% else %}
-  <h1>Hello, World!</h1>
+  <h1>No Draw available. Refresh Page</h1>
 {% endif %}
 
 
