@@ -2,7 +2,7 @@ pipeline{
         agent any
         stages{
                 stage('Deploy Application'){
-                        ssh """
+                        sh """
                         ssh project@51.11.37.208 << EOF
                         rm -rf workspace
                         git clone http://github.com/BenjieA/workspace.git
