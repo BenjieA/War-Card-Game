@@ -1,10 +1,19 @@
 from flask import Flask, request, jsonify, Response
+from flask_sqlalchemy import SQLAlchemy
+
 import requests
+
 from os import getenv
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = getenv('SECRET_KEY') 
+app.config['SQLALCHEMY_DATABASE_URI'] = str(getenv('DATABASE_URI'))
+app.config['SQLALCHEMY_ECHO'] = True
+db = SQLAlchemy(app)
+
+#class Winn(db.Model):
+#       win_card_value = db.Column(db.String(50), primary_key=True)
 
 
 @app.route('/')
@@ -28,18 +37,15 @@ def backend():
 	if user_score > house_score:
 		win_card = user_card
 		winner = 'player'
-#sql create database matches
-#add columns user, house, winner, card
-#add user card for this round
-#add house card
-#add winner name
-#add winner card value  userval[5][14:-4]
+
 	else:
 		win_card = house_card
 		winner = 'house'
 
-	return_arr = {'h_card': house_card, 'u_card': user_card, 'winn_c': win_card, 'winner': winner}
+#	db.session.add(Winn(win_card_value = win_card))
+#	db.commit()
 
+	return_arr = {'h_card': house_card, 'u_card': user_card, 'winn_c': win_card, 'winner': winner}
 	return return_arr
 
 if  __name__ == '__main__':

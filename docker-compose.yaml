@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   backend:
-    image: backend:v1
+    image: benjiea/backend:v1
     ports:
     - target: 5001
       published: 5001
@@ -10,7 +10,7 @@ services:
     - SECRET_KEY=${SECRET_KEY}
    
   usergen:
-    image: usergen:v1
+    image: benjiea/usergen:v1
     ports:
     - target: 5002  
       published: 5002
@@ -19,7 +19,7 @@ services:
     - SECRET_KEY=${SECRET_KEY}
   
   housegen:
-    image: housegen:v1
+    image: benjiea/housegen:v1
     ports:
     - target: 5003
       published: 5003
@@ -28,7 +28,7 @@ services:
     - SECRET_KEY=${SECRET_KEY}   
 
   frontend:
-    image: frontend:v1
+    image: benjiea/frontend:v1
     ports:
     - target: 5000
       published: 5000
