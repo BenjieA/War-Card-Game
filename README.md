@@ -21,11 +21,11 @@ The final solution was a simpler game in which cards are drawn but highest card 
 **CI/CD Pipeline:**
 
 *Diagram:*
-![](images/pipeline.png)
+![](pipeline.png)
 
 **Testing** The testing was intended to be done using pytest. This would be to test all basic functions to make sure product is able to be presented as the minimum viable product. Alongside the pytest, Selenium would be used to test the integration aspects of the app. The testing was started but was not completely for all factions of the code
 
-**Deployment Technologies** Used The intended form of deployment incorporates Jenkins into the development and integration process, with each commit and push to git initiating a test and if successful being pushed online to be part of the functioning app. And the app then environment being set with ansible and then deployed.
+**Deployment Technologies** Used The intended form of deployment incorporates Jenkins using docker images and swarm. Jenkins would go into the development and integration process, with each commit and push to git initiating a test and if successful being pushed online to be part of the functioning app. And the app then environment being set with ansible and then deployed.
 Front-end Design The design was intended to just get the job done. It outputs all the important information whilst stating the rules.
 
 **Improvements for Future** Currently the databases are still a problem for me, with it not functioning correctly. Also testing would be a large improvement. Other improvements include implementing testing and Continuous Integration methodology more thoroughly.
