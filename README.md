@@ -1,7 +1,7 @@
 # workspace
 # Random Generator Card App
 Index
--*Brief*
+-**Brief**
 -*My Intended Solution*
 -**CI/CD Pipeline**
 -*Pipeline*
@@ -17,9 +17,10 @@ Index
 
 **Intended Solution** The intended solution was to make the game of blackjack/21. One service would pull random cards for the user and the 2nd service would pull for the house. The user would then either hit, stay or split depending on the cards. The back end/service 3 would then do all the maths and logic behind the game whilst getting the card data from the other 2. The final service is the frontend which would acts as a face for the application using bare minimum logic and just formatting. Once the winner was calculated the hand of cards would be added to the database and a leaderboard would be kept.
 The final solution was a simpler game in which cards are drawn but highest card wins the game straight away. 
-CI/CD Pipeline:
 
-**Diagram:**
+**CI/CD Pipeline:**
+
+*Diagram:*
 ![](images/pipeline.png)
 
 **Testing** The testing was intended to be done using pytest. This would be to test all basic functions to make sure product is able to be presented as the minimum viable product. Alongside the pytest, Selenium would be used to test the integration aspects of the app. The testing was started but was not completely for all factions of the code
