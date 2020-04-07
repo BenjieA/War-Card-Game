@@ -33,5 +33,5 @@ Changes I would make to the process of creating this project are to better struc
 
 *Authors: Benjamin Asare*
 
-Acknowledgments: God, The family, Jay, everybody and Coronavirus
+Acknowledgments: God, The family, Jay, everybody
 
