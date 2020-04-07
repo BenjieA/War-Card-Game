@@ -1,17 +1,17 @@
 # workspace
 # Random Generator Card App
 Index
--**Brief**
+- **Brief**
 -*My Intended Solution*
--**CI/CD Pipeline**
+- **CI/CD Pipeline**
 -*Pipeline*
--**Testing**
--**Deployment**
--	**Technologies Used**
--**Front End Design**
--**Improvements for the Future**
--**Authors**
--**Acknowledgements**
+- **Testing**
+- **Deployment**
+- **Technologies Used**
+- **Front End Design**
+- **Improvements for the Future**
+- **Authors**
+- **Acknowledgements**
 
 **Brief** The objective of this project was to create an application with the utilisation of supporting tools, methodologies and technologies, covered within the training period. The scope of the project was to create a tracking board for user stories/use cases, an architecture consisting of 4 services working together with 2 different version implementations, have clear documentation alongside, risk assessment, adequate testing and deployment.
 
