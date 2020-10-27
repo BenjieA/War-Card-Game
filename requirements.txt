@@ -1,7 +1,7 @@
 asn1crypto==0.24.0
 cffi==1.14.0
 click==7.1.1
-cryptography==2.9
+cryptography==3.2
 enum34==1.1.10
 Flask==1.1.1
 idna==2.6
